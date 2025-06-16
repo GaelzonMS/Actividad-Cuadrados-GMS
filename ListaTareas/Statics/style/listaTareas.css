@@ -1,0 +1,63 @@
+#titulo{
+    height: 25px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(163, 157, 255);
+    display: inline-block;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+#seccionTit{
+    background-color: rgb(229, 254, 255);
+}
+
+#seccionBtn{
+    background-color: rgb(128, 172, 173);
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.botones{
+    background-color: rgb(72, 112, 112);
+    border-color: rgb(72, 112, 112);
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.botones:hover{
+    background-color: rgb(48, 48, 243);
+    border-color: rgb(48, 48, 243);
+    text-decoration: none;
+    color: white;
+}
+
+#recuadroTareas{
+    position: relative;
+    top:10px;
+    width: 80%;
+    border: 5px solid black;
+    display: flex;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tarea{
+    width: 50px;
+    height: 50px;
+    padding: 80px;
+    margin: 15px 15px;
+    text-align: center;
+    color: black;
+    background-color: rgb(229, 254, 255);
+}
