@@ -60,3 +60,11 @@ section{
     color: black;
     background-color: rgb(229, 254, 255);
 }
+
+img{
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
