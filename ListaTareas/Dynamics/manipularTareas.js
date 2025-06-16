@@ -11,3 +11,11 @@ btnCrear.addEventListener("click", ()=>{
     nuevaTarea.textContent = "Tarea";
     espacioTareas.appendChild(nuevaTarea);
 })
+
+btcEliminar.addEventListener("click", ()=>{
+    if(document.getElementsByClassName("tarea") != null)
+    {
+        let ultimasTarea = document.getElementsByClassName("tarea");
+        espacioTareas.removeChild(ultimasTarea[ultimasTarea.length - 1]);
+    }
+})

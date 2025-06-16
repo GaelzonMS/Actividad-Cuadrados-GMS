@@ -35,8 +35,8 @@ section{
 }
 
 .botones:hover{
-    background-color: rgb(48, 48, 243);
-    border-color: rgb(48, 48, 243);
+    background-color: rgb(74, 74, 133);
+    border-color: rgb(74, 74, 133);
     text-decoration: none;
     color: white;
 }
@@ -47,7 +47,6 @@ section{
     width: 80%;
     border: 5px solid black;
     display: flex;
-    flex-basis: 80%;
     flex-wrap: wrap;
     align-items: flex-start;
 }
