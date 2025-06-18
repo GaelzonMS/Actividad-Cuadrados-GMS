@@ -76,4 +76,16 @@ mainForm.addEventListener("submit", function(event){
         errorName.innerHTML += "<br>";
         mainForm.insertBefore(errorName, document.querySelector("label[for='comentarios']"));
     }
+
+    //validamos la imagen a subir
+    let inputImg = document.getElementById("imagen");
+    if(inputImg.getAttribute("accept") != "image/*"){
+        console.log("Error en la imagen");
+        errorName = document.createElement("label");
+        errorName.textContent = "Archivo inválido";
+        errorName.setAttribute("class", "error");
+        errorName.innerHTML += "<br>";
+        mainForm.insertBefore(errorName, document.querySelector("br[id='preSubmit']"));
+    }
+    
 })
