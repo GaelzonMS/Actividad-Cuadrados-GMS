@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario GMS</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Formulario Completo</h2>
+        <form id="mainForm">
+            <label for="nombre">Nombre completo:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <label for="edad">Edad</label>
+            <br>
+            <input type="number" name="edad" id="edad" integer required placeholder="Ingresa tu edad (8-108)">
+            <br>
+            <label for="cp">Código postal</label>
+            <br>
+            <input type="number" name="cp" id="cp" required placeholder="Ingresa tu código postal: xxxxx">
+            <br>
+            <label for="genero">Género:</label>
+            <br>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label>Masculino</label>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label>Femenino</label>
+            <input type="radio" name="genero" id="otro" value="otro"> 
+            <label>Otro</label>
+            <br>
+            <label for="intereses">Intereses (seleccione todos los que apliquen):</label>
+            <br>
+            <input type="checkbox" name="intereses" id="tecnologia" value="tecnologia">
+            <label>Tecnología</label>
+            <input type="checkbox" name="intereses" id="deportes" value="deportes">
+            <label>Deportes</label>
+            <input type="checkbox" name="intereses" id="musica" value="musica">
+            <label>Música</label>
+            <input type="checkbox" name="intereses" id="arte" value="arte">
+            <label>Arte</label>
+            <br>
+            <label for="pais">País:</label>
+            <select name="pais" id="paises">
+                <option value="">Selecciona tu país</option>
+                <option value="mexico">México</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Argentina">Argentina</option>
+                <option value="España">España</option>
+            </select>
+            <br>
+            <label for="comentarios">Comentarios adicionales</label>
+            <input type="text" name="comentarios" id="comentarios" placeholder="Escribe tus comentarios aquí...">
+            <br>
+            <label for="imagen">Subir imagen:</label>
+            <br>
+            <input type="file" name="imagen" id="imagen" accept="image/*" required>
+            <br><br>
+            <button type="submit" id="btnSubmit">Enviar formulario</button>
+        </form>
+    </div>
+
+    <script src="../Dynamics/validacionForms.js"></script>
+</body>
+</html>
