@@ -12,7 +12,7 @@ mainForm.addEventListener("submit", function(event){
     // obtenemos los datos con respuesta multiple
     let inputGenero= document.querySelector("input[name='genero']:checked");
     let inputIntereses = document.querySelector("input[name='intereses']:checked");
-    let inputPais = document.querySelector("input[name='pais']:checked");
+    let inputPais = document.querySelector("option:checked");
 
     //validamos el nombre
     if(inputName.value == ""){
@@ -57,5 +57,23 @@ mainForm.addEventListener("submit", function(event){
 
     //validamos los intereses
     let intereses = ["tecnologia", "deportes", "arte", "musica"];
-    console.log(inputIntereses)
+    if(intereses.indexOf(inputIntereses.value) == -1){
+        console.log("Error en el interes");
+        errorName = document.createElement("label");
+        errorName.textContent = "Interés ingresado desconocido";
+        errorName.setAttribute("class", "error");
+        errorName.innerHTML += "<br>";
+        mainForm.insertBefore(errorName, document.querySelector("label[for='pais']"));
+    }
+
+    //validamos el pais
+    let paises = ["mexico", "Venezuela", "Argentina", "España"];
+    if(paises.indexOf(inputPais.value) == -1){
+        console.log("Error en el pais");
+        errorName = document.createElement("label");
+        errorName.textContent = "País inválido";
+        errorName.setAttribute("class", "error");
+        errorName.innerHTML += "<br>";
+        mainForm.insertBefore(errorName, document.querySelector("label[for='comentarios']"));
+    }
 })
